@@ -122,7 +122,7 @@ public class SimController : MonoBehaviour
         Rigidbody rb = vehicle.GetComponent<Rigidbody>();
 
         rb.angularVelocity = Vector3.zero;
-        rb.velocity = Vector3.zero;
+        rb.linearVelocity = Vector3.zero;
 
         activeVehicle = type;
     }
@@ -152,7 +152,7 @@ public class SimController : MonoBehaviour
         Rigidbody rb = trailer_selfDriving.GetComponent<Rigidbody>();
 
         rb.angularVelocity = Vector3.zero;
-        rb.velocity = Vector3.zero;
+        rb.linearVelocity = Vector3.zero;
 
         activeVehicle = VehicleTypes.Semi_Trailer;
     }

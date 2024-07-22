@@ -58,7 +58,10 @@ namespace SelfDrivingVehicle
                 //Display the waypoint we are heading towards
                 //Vector3 waypointPos = GetWaypointPos(currentWayPointIndex, false);
 
-                Debug.DrawRay(wayPoints[currentWayPointIndex].rearWheelPos, Vector3.up * 5f, Color.red);
+                if (wayPoints != null)
+                {
+                    Debug.DrawRay(wayPoints[currentWayPointIndex].rearWheelPos, Vector3.up * 5f, Color.red);   
+                }
             }
             //If not, then stop the car
             else
